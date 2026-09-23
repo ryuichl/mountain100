@@ -40,7 +40,6 @@ a{color:var(--cedar);text-underline-offset:3px}
 .facts div{display:flex;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
 .facts dt{color:var(--ink2);font-size:.88rem;flex:none}
 .facts dd{margin:0 0 0 auto;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
-.offline{margin:20px 0 0;padding:10px 14px;border-radius:6px;background:var(--signal-bg);color:var(--signal-ink);font-size:.9rem;box-shadow:inset 3px 0 0 var(--signal)}
 
 nav.days{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:10px;margin-inline:-16px;padding-inline:16px;padding-top:max(10px,env(safe-area-inset-top))}
 nav.days::-webkit-scrollbar{display:none}
