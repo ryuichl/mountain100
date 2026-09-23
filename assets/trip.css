@@ -156,6 +156,11 @@ td.note{white-space:normal;min-width:180px}
 .legend i{display:inline-block;width:14px;height:14px;border:2px solid var(--signal);border-radius:4px;vertical-align:-2px;margin-right:6px}
 .legend button{font:inherit;font-size:.82rem;color:var(--ink2);background:none;border:1px solid var(--line);border-radius:999px;padding:2px 12px;cursor:pointer;margin-left:auto}
 
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:16px}
+.tips ul{list-style:none;padding:0;margin:8px 0 0}
+.tips li{position:relative;padding:5px 0 5px 18px;font-size:.94rem;line-height:1.6}
+.tips li::before{content:"";position:absolute;left:2px;top:14px;width:7px;height:7px;border-radius:50%;background:var(--lichen)}
+.tips .notes li::before{background:var(--warn)}
 .src{font-size:.86rem;color:var(--ink2);columns:2 300px;column-gap:32px;padding-left:18px}
 .src li{margin:4px 0;break-inside:avoid}
 @media (max-width:720px){
