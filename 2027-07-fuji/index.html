@@ -18,15 +18,13 @@
 .cal td.ok{background:var(--signal-bg);color:var(--signal-ink)}
 .cal td.avoid{background:var(--warn-bg);color:var(--warn-ink)}
 .cal td.rain{color:var(--ink2);background:repeating-linear-gradient(135deg,transparent 0 5px,var(--surface2) 5px 7px)}
-.cal td.tour::after{content:"";position:absolute;left:50%;bottom:4px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--cedar)}
+.cal .dots{position:absolute;left:0;right:0;bottom:3px;display:flex;justify-content:center;gap:3px}
+.cal .dots i{width:5px;height:5px;border-radius:50%}
+.d1{background:var(--cedar)}.d2{background:var(--warn)}.d3{background:var(--rail)}
 .lg2{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.85rem;color:var(--ink2);margin-top:10px}
 .lg2 i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:6px;border:1px solid var(--line)}
-.cal td.tour2::before{content:"";position:absolute;left:50%;bottom:4px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--warn)}
-.cal td.tour.tour2::after{margin-left:-7px}
-.cal td.tour.tour2::before{margin-left:2px}
 .cal td.off{color:var(--ink2);opacity:.35}
-.lg2 .dot{width:6px;height:6px;border-radius:50%;background:var(--cedar);border:0;vertical-align:2px}
-.lg2 .dot2{background:var(--warn)}
+.lg2 .dot{width:6px;height:6px;border-radius:50%;border:0;vertical-align:2px}
 .box .meta{font-size:.85rem;color:var(--ink2);margin:2px 0 0}
 .box h3 a{color:inherit}
 details{margin-top:16px}
@@ -51,7 +49,7 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
       <div><dt>開山期間</dt><dd>7/1 – 9/10</dd></div>
       <div><dt>入山費</dt><dd>¥4,000／人</dd></div>
       <div><dt>山屋一晚含兩餐</dt><dd>約 ¥15,000–18,000</dd></div>
-      <div><dt>自組 vs 跟團價差</dt><dd>每人約 NT$12,000–14,500</dd></div>
+      <div><dt>自組 vs 跟團價差</dt><dd>每人約 NT$11,500–14,500</dd></div>
       <div><dt>推薦時段</dt><dd>7/20–7/30、8/2–8/6 平日</dd></div>
       <div><dt>匯率假設</dt><dd>¥1 ≈ NT$0.21</dd></div>
     </dl>
@@ -70,18 +68,18 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
 </nav>
 
 <h2 id="cost" class="plain">費用比較</h2>
-<p>每人、東京出發回到東京的兩天。機票和東京住宿三種方式都要另外算。</p>
+<p>每人、東京出發回到東京的兩天。機票和東京住宿都要另外算。</p>
 <div class="tablewrap"><table>
-  <thead><tr><th>項目</th><th>荒野旅人（吉田線）</th><th>貓咪裝人×允達（富士宮線）</th><th>自組（吉田線）</th></tr></thead>
+  <thead><tr><th>項目</th><th>荒野旅人（吉田線）</th><th>貓咪裝人×允達（富士宮線）</th><th>入野門兩天一夜（吉田線）</th><th>自組（吉田線）</th></tr></thead>
   <tbody>
-    <tr><td>團費／山屋</td><td>NT$17,900 起，含八合目山屋、晚餐、早餐</td><td>早鳥 NT$17,800（12/31 前）、原價 NT$19,600，含九合目萬年雪山莊、晚餐、早餐</td><td>¥15,000–18,000（一晚含兩餐）</td></tr>
-    <tr><td>東京 ⇄ 河口湖</td><td>不含，新宿巴士來回約 ¥4,400</td><td rowspan="2" class="note">含新宿來回專車，07:00 出發、隔天 18:00 回新宿</td><td>新宿巴士來回約 ¥4,400</td></tr>
+    <tr><td>團費／山屋</td><td>NT$17,900 起，含八合目山屋、晚餐、早餐</td><td>早鳥 NT$17,800（12/31 前）、原價 NT$19,600，含九合目萬年雪山莊、晚餐、早餐</td><td>NT$15,900，含八合目山屋（以白雲莊為主）、晚餐、早餐</td><td>¥15,000–18,000（一晚含兩餐）</td></tr>
+    <tr><td>東京 ⇄ 河口湖</td><td>不含，新宿巴士來回約 ¥4,400</td><td rowspan="2" class="note">含新宿來回專車，07:00 出發、隔天 18:00 回新宿</td><td rowspan="2" class="note">不含，11:00 五合目集合解散。加購專車 NT$3,000：巢鴨 07:45 或河口湖／御殿場 10:00 上車，含下山溫泉，名額有限</td><td>新宿巴士來回約 ¥4,400</td></tr>
     <tr><td>河口湖 ⇄ 五合目</td><td>含</td><td>巴士來回約 ¥2,800–3,600</td></tr>
-    <tr><td>入山費</td><td>不含，¥4,000</td><td>不含，¥4,000</td><td>¥4,000</td></tr>
-    <tr><td>嚮導</td><td>台灣嚮導兩位</td><td>中文嚮導，1 位帶 6–8 人</td><td>無</td></tr>
-    <tr><td>保險</td><td>旅行業責任險</td><td>旅平險 300 萬＋登山特定險 200 萬</td><td>自保旅平險，確認登山不在除外條款</td></tr>
-    <tr><td>山上水、食物、廁所</td><td>¥3,000–5,000</td><td>¥3,000–5,000（兩天午餐、行動糧自理）</td><td>¥3,000–5,000</td></tr>
-    <tr class="pick"><td>兩天合計</td><td>約 NT$20,300–20,700</td><td>約 NT$19,300–19,700（原價約 NT$21,100–21,500）</td><td>約 NT$6,100–7,400</td></tr>
+    <tr><td>入山費</td><td>不含，¥4,000</td><td>不含，¥4,000</td><td>不含，¥4,000</td><td>¥4,000</td></tr>
+    <tr><td>嚮導</td><td>台灣嚮導兩位</td><td>中文嚮導，1 位帶 6–8 人</td><td>台灣山域嚮導；超過 10 人加派中日文日本嚮導</td><td>無</td></tr>
+    <tr><td>保險</td><td>旅行業責任險</td><td>旅平險 300 萬＋登山特定險 200 萬</td><td>含保險（表單沒寫額度）</td><td>自保旅平險，確認登山不在除外條款</td></tr>
+    <tr><td>山上水、食物、廁所</td><td>¥3,000–5,000</td><td>¥3,000–5,000（兩天午餐、行動糧自理）</td><td>¥3,000–5,000（兩天午餐自理）</td><td>¥3,000–5,000</td></tr>
+    <tr class="pick"><td>兩天合計</td><td>約 NT$20,300–20,700</td><td>約 NT$19,300–19,700（原價約 NT$21,100–21,500）</td><td>加購專車約 NT$20,400–20,800；自己搭巴士約 NT$18,900–19,400</td><td>約 NT$6,100–7,400</td></tr>
   </tbody>
 </table></div>
 <h3>整趟實際花費參考</h3>
@@ -97,15 +95,15 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
 
 <h2 id="todo" class="plain">要處理的事</h2>
 <div class="tablewrap"><table>
-  <thead><tr><th>事項</th><th>荒野旅人</th><th>貓咪裝人×允達</th><th>自組</th></tr></thead>
+  <thead><tr><th>事項</th><th>荒野旅人</th><th>貓咪裝人×允達</th><th>入野門</th><th>自組</th></tr></thead>
   <tbody>
-    <tr><td>山屋訂位</td><td class="note">旅行社處理，訂不到改走富士宮線（住九合目萬年雪山莊）</td><td class="note">旅行社處理，以萬年雪山莊為主，上下舖有隔間；訂不到改住其他山屋</td><td class="note">自己搶，開放當天常就額滿。搶不到可透過日本旅行社訂，但貴約 50%</td></tr>
-    <tr><td>入山預約</td><td class="note">頁面沒寫誰處理，要問</td><td class="note">入山費現場自付，預約和線上學習誰處理要問</td><td class="note">自己在山梨縣官網預約、刷卡繳費</td></tr>
-    <tr><td>日期</td><td class="note">13 個固定梯次（7/13–8/31），12 人成團</td><td class="note">25 個梯次（7/12–9/9），6 人成團，不足 6 人可改期、補差額包團或全退</td><td class="note">自己挑平日、留預備日</td></tr>
-    <tr><td>交通</td><td class="note">自己到河口湖車站集合</td><td class="note">新宿專車接送，下山後安排御殿場 Outlet、泡湯或美食</td><td class="note">自己搭巴士</td></tr>
-    <tr><td>高山症、天候判斷</td><td class="note">嚮導決定前進或撤退</td><td class="note">嚮導決定；官方封山改周邊觀光，不退費</td><td class="note">自己判斷</td></tr>
-    <tr><td>裝備</td><td class="note">頁面沒提租借</td><td class="note">五合目可租，建議在東京先租好</td><td class="note">自備或租借，整套約 ¥10,000–20,000</td></tr>
-    <tr><td>取消</td><td class="note">出發前 31 天以上不扣錢；天候無法登頂不退費</td><td class="note">31 天以上扣 5%、16–30 天 10%、8–15 天 30%、4–7 天 50%、3 天內 100%</td><td class="note">依各山屋規定；入山費預約日兩天後不退</td></tr>
+    <tr><td>山屋訂位</td><td class="note">旅行社處理，訂不到改走富士宮線（住九合目萬年雪山莊）</td><td class="note">旅行社處理，以萬年雪山莊為主，上下舖有隔間；訂不到改住其他山屋</td><td class="note">代訂，以白雲莊為主；沒床位改其他八合目、本八合目山屋，或改富士宮線，萬年雪山莊保證入住</td><td class="note">自己搶，開放當天常就額滿。搶不到可透過日本旅行社訂，但貴約 50%</td></tr>
+    <tr><td>入山預約</td><td class="note">頁面沒寫誰處理，要問</td><td class="note">入山費現場自付，預約和線上學習誰處理要問</td><td class="note">入山費自付，預約誰處理要問</td><td class="note">自己在山梨縣官網預約、刷卡繳費</td></tr>
+    <tr><td>日期</td><td class="note">13 個固定梯次（7/13–8/31），12 人成團</td><td class="note">25 個梯次（7/12–9/9），6 人成團，不足 6 人可改期、補差額包團或全退</td><td class="note">兩天一夜 19 梯（7/1–9/7），6 人成團；未滿 6 人另外報價，可換 Alphard 商旅車</td><td class="note">自己挑平日、留預備日</td></tr>
+    <tr><td>交通</td><td class="note">自己到河口湖車站集合</td><td class="note">新宿專車接送，下山後安排御殿場 Outlet、泡湯或美食</td><td class="note">自己到五合目，或加購專車</td><td class="note">自己搭巴士</td></tr>
+    <tr><td>高山症、天候判斷</td><td class="note">嚮導決定前進或撤退</td><td class="note">嚮導決定；官方封山改周邊觀光，不退費</td><td class="note">嚮導決定</td><td class="note">自己判斷</td></tr>
+    <tr><td>裝備</td><td class="note">頁面沒提租借</td><td class="note">五合目可租，建議在東京先租好</td><td class="note">三天兩夜、五天四夜第一晚帶去採買和檢查裝備</td><td class="note">自備或租借，整套約 ¥10,000–20,000</td></tr>
+    <tr><td>取消</td><td class="note">出發前 31 天以上不扣錢；天候無法登頂不退費</td><td class="note">31 天以上扣 5%、16–30 天 10%、8–15 天 30%、4–7 天 50%、3 天內 100%</td><td class="note">表單沒寫，要問</td><td class="note">依各山屋規定；入山費預約日兩天後不退</td></tr>
   </tbody>
 </table></div>
 <div class="tips">
@@ -130,11 +128,23 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
     </ul>
   </div>
   <div class="box">
+    <h3>入野門團的細節</h3>
+    <ul>
+      <li>報名表沒有公開，價格來自 2026/11/17 的表單內容</li>
+      <li><b>兩天一夜 NT$15,900</b>：11:00 五合目集合、五合目解散；加購專車和下山溫泉 NT$3,000</li>
+      <li><b>三天兩夜 NT$24,000</b>：D1 17:00 巢鴨飯店集合、檢查裝備、帶去採買；D2 專車上山住山屋；D3 登頂、泡湯、新宿解散。含巢鴨飯店一晚，單人房加 NT$1,200</li>
+      <li><b>五天四夜 NT$39,800</b>：成田機場接送、巢鴨飯店、山中湖溫泉飯店帝王蟹自助、忍野八海和河口湖一日遊。單人房 3 晚加 NT$4,000</li>
+      <li>三種方案同一天上山，可以跟朋友選不同方案</li>
+      <li>報名要填護照資料、身分證字號、上傳護照照片</li>
+    </ul>
+  </div>
+  <div class="box">
     <h3>適合誰</h3>
     <ul>
       <li><b>自組</b>：有 3,000 m 以上經驗、2 人以上、能早點搶山屋</li>
       <li><b>貓咪裝人×允達</b>：想從東京直接上山、怕人多、想要日期選擇多；早鳥價跟荒野旅人差不多但多含東京交通和保險</li>
       <li><b>荒野旅人</b>：想走吉田線、要雙嚮導、取消 31 天前不扣錢</li>
+      <li><b>入野門兩天一夜</b>：想走吉田線、自己會到五合目，團費最便宜；三天兩夜適合想要人帶著採買裝備的新手</li>
     </ul>
   </div>
 </div>
@@ -178,8 +188,9 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
   <span><i style="background:var(--signal-bg)"></i>可以</span>
   <span><i style="background:var(--warn-bg)"></i>避開（日本連假、盂蘭盆節）</span>
   <span><i style="background:repeating-linear-gradient(135deg,transparent 0 5px,var(--surface2) 5px 7px)"></i>梅雨季</span>
-  <span><i class="dot"></i>荒野旅人出團日</span>
-  <span><i class="dot dot2"></i>貓咪裝人×允達出團日</span>
+  <span><i class="dot d1"></i>荒野旅人出團日</span>
+  <span><i class="dot d2"></i>貓咪裝人×允達出團日</span>
+  <span><i class="dot d3"></i>入野門上山日</span>
 </div>
 <div class="tablewrap"><table>
   <thead><tr><th>日期</th><th>事件</th><th>影響</th></tr></thead>
@@ -209,6 +220,17 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
     <tr class="pick"><td>推薦</td><td class="note">7/28–29（三四，6 席）、7/29–30（四五，8 席）、8/5–6（四五，6 席）；7/22–23（四五）已滿</td></tr>
     <tr><td>普通</td><td class="note">7/15–16（四五，梅雨尾，2 席）、7/30–31（五六，8 席）、8/19–20（四五，8 席）、8/22–23（日一，3 席）、8/26–27（四五，8 席）、9/1–2（三四）、9/6–7（一二）、9/8–9（三四）；8/25–26 已滿</td></tr>
     <tr class="dim"><td>避開</td><td class="note">7/16–17、7/18–19（三連休）、7/24–25、8/7–8、8/12–13、8/15–16（盂蘭盆節）、8/20–21、8/28–29、9/3–4、9/4–5；7/12–13、8/1–2 已滿</td></tr>
+  </tbody>
+</table></div>
+
+<h3>入野門梯次對照</h3>
+<p class="caption">日期為上山日到登頂日。三天兩夜在前一天到巢鴨集合，五天四夜只在其中 10 個上山日出團。</p>
+<div class="tablewrap"><table>
+  <thead><tr><th>評價</th><th>梯次</th></tr></thead>
+  <tbody>
+    <tr class="pick"><td>推薦</td><td class="note">7/22–23（四五）、7/26–27（一二）、7/29–30（四五）、8/2–3（一二）、8/4–5（三四，花火梯，河口湖鎮上人多）</td></tr>
+    <tr><td>普通</td><td class="note">7/12–13（一二）、7/15–16（四五）梅雨尾；7/19–20（一二）海之日當天上山；8/19–20、8/23–24、8/26–27、8/30–31、9/2–3、9/6–7</td></tr>
+    <tr class="dim"><td>避開</td><td class="note">7/1–2（開山梯）、7/8–9 梅雨季且山頂未開；8/9–10、8/12–13、8/16–17 盂蘭盆節前後</td></tr>
   </tbody>
 </table></div>
 
@@ -411,6 +433,7 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
 <script>
 (function(){
   var Y=2027,tour=['7-13','7-16','7-22','7-25','7-28','7-31','8-9','8-12','8-15','8-20','8-23','8-26','8-30'],
+    tour3=['7-1','7-8','7-12','7-15','7-19','7-22','7-26','7-29','8-2','8-4','8-9','8-12','8-16','8-19','8-23','8-26','8-30','9-2','9-6'],
     tour2=['7-12','7-15','7-16','7-18','7-22','7-24','7-28','7-29','7-30','8-1','8-5','8-7','8-12','8-15','8-19','8-20','8-22','8-25','8-26','8-28','9-1','9-3','9-4','9-6','9-8'];
   function cls(m,d,w){
     var k=m*100+d;
@@ -427,9 +450,11 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
     var first=new Date(Y,m-1,1).getDay(),n=new Date(Y,m,0).getDate(),row='<tr>'+'<td></td>'.repeat(first),rows='';
     for(var d=1;d<=n;d++){
       var w=(first+d-1)%7,c=cls(m,d,w);
-      if(tour.indexOf(m+'-'+d)>=0)c+=' tour';
-      if(tour2.indexOf(m+'-'+d)>=0)c+=' tour2';
-      row+='<td class="'+c.trim()+'">'+d+'</td>';
+      var key=m+'-'+d,dots='';
+      if(tour.indexOf(key)>=0)dots+='<i class="d1"></i>';
+      if(tour2.indexOf(key)>=0)dots+='<i class="d2"></i>';
+      if(tour3.indexOf(key)>=0)dots+='<i class="d3"></i>';
+      row+='<td class="'+c+'">'+d+(dots?'<span class="dots">'+dots+'</span>':'')+'</td>';
       if(w===6){rows+=row+'</tr>';row='<tr>'}
     }
     if(row!=='<tr>')rows+=row+'</tr>';
