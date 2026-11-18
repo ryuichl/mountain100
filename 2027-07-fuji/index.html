@@ -20,15 +20,13 @@
 .cal td.rain{color:var(--ink2);background:repeating-linear-gradient(135deg,transparent 0 5px,var(--surface2) 5px 7px)}
 .cal .dots{position:absolute;left:0;right:0;bottom:3px;display:flex;justify-content:center;gap:3px}
 .cal .dots i{width:5px;height:5px;border-radius:50%}
-.d1{background:var(--cedar)}.d3{background:var(--rail)}
+.d3{background:var(--rail)}
 .lg2{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.85rem;color:var(--ink2);margin-top:10px}
 .lg2 i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:6px;border:1px solid var(--line)}
 .cal td.off{color:var(--ink2);opacity:.35}
 .lg2 .dot{width:6px;height:6px;border-radius:50%;border:0;vertical-align:2px}
 .box .meta{font-size:.85rem;color:var(--ink2);margin:2px 0 0}
 .box h3 a{color:inherit}
-details{margin-top:16px}
-summary{cursor:pointer;font-weight:700;color:var(--cedar)}
 .tips ol{margin:8px 0 0;padding-left:1.3em}
 .tips ol li{margin:4px 0}
 </style>
@@ -44,15 +42,13 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
   <div class="hero-text">
     <a class="back" href="../">所有行程</a>
     <p class="when">2027 年 7–8 月，日期未定</p>
-    <p class="who">規劃中：自組或跟團還沒決定，先整理 2024 年以後的資料</p>
-    <p class="sub">兩天一夜，第一天從五合目爬到八合目山屋住一晚，第二天凌晨攻頂看御來光、繞火山口，再下山回五合目。這頁比較自組和跟團的費用、該處理的事，以及 2024–2026 年其他人自組的實際經驗。</p>
+    <p class="who">規劃中：全自組，或登山兩天改報入野門團</p>
+    <p class="sub">五天四夜：D1 飛羽田到河口湖，D2 上山住八合目山屋，D3 凌晨攻頂後下山，D4 河口湖一日遊，D5 回台灣。</p>
     <dl class="facts">
       <div><dt>路線</dt><dd>吉田線（山梨縣側）</dd></div>
       <div><dt>開山期間</dt><dd>7/1 – 9/10</dd></div>
-      <div><dt>入山費</dt><dd>¥4,000／人</dd></div>
-      <div><dt>山屋一晚含兩餐</dt><dd>2026 八合目以上約 ¥12,000–17,600</dd></div>
-      <div><dt>自組五天估算</dt><dd>每人約 NT$28,000，不含餐費等</dd></div>
-      <div><dt>自組 vs 跟團價差</dt><dd>兩天登山段每人約 NT$11,500–14,500</dd></div>
+      <div><dt>全自組</dt><dd>每人約 NT$28,000，不含餐費等</dd></div>
+      <div><dt>入野門兩天＋自組</dt><dd>每人約 NT$40,600</dd></div>
       <div><dt>推薦時段</dt><dd>7/20–7/30、8/2–8/6 平日</dd></div>
       <div><dt>匯率假設</dt><dd>¥1 ≈ NT$0.21</dd></div>
     </dl>
@@ -60,50 +56,24 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
 </header>
 
 <nav class="days" aria-label="頁面章節">
-  <a href="#cost">費用比較</a>
-  <a href="#budget">自組花費</a>
-  <a href="#todo">要處理的事</a>
-  <a href="#rules">入山規定</a>
+  <a href="#budget">花費</a>
+  <a href="#plans">跟團比較</a>
+  <a href="#d4">D4 交通</a>
   <a href="#when">推薦時段</a>
-  <a href="#reports">自組心得</a>
-  <a href="#huts">山屋一覽</a>
-  <a href="#tips">共同建議</a>
+  <a href="#huts">山屋</a>
+  <a href="#tips">注意事項</a>
   <a href="#src">資料來源</a>
 </nav>
 
-<h2 id="cost" class="plain">費用比較</h2>
-<p>每人、東京出發回到東京的兩天。機票和東京住宿都要另外算。</p>
-<div class="tablewrap"><table>
-  <thead><tr><th>項目</th><th>荒野旅人（吉田線）</th><th>入野門兩天一夜（吉田線）</th><th>自組（吉田線）</th></tr></thead>
-  <tbody>
-    <tr><td>團費／山屋</td><td>NT$17,900 起，含八合目山屋、晚餐、早餐</td><td>NT$15,900，含八合目山屋（以白雲莊為主）、晚餐、早餐</td><td>¥15,000–18,000（一晚含兩餐）</td></tr>
-    <tr><td>東京 ⇄ 河口湖</td><td>不含，新宿巴士來回約 ¥4,400</td><td rowspan="2" class="note">不含，11:00 五合目集合解散。加購專車 NT$3,000：巢鴨 07:45 或河口湖／御殿場 10:00 上車，含下山溫泉，名額有限</td><td>新宿巴士來回約 ¥4,400</td></tr>
-    <tr><td>河口湖 ⇄ 五合目</td><td>含</td><td>巴士來回約 ¥2,800–3,600</td></tr>
-    <tr><td>入山費</td><td>不含，¥4,000</td><td>不含，¥4,000</td><td>¥4,000</td></tr>
-    <tr><td>嚮導</td><td>台灣嚮導兩位</td><td>台灣山域嚮導；超過 10 人加派中日文日本嚮導</td><td>無</td></tr>
-    <tr><td>保險</td><td>旅行業責任險</td><td>含保險（表單沒寫額度）</td><td>自保旅平險，確認登山不在除外條款</td></tr>
-    <tr><td>山上水、食物、廁所</td><td>¥3,000–5,000</td><td>¥3,000–5,000（兩天午餐自理）</td><td>¥3,000–5,000</td></tr>
-    <tr class="pick"><td>兩天合計</td><td>約 NT$20,300–20,700</td><td>加購專車約 NT$20,400–20,800；自己搭巴士約 NT$18,900–19,400</td><td>約 NT$6,100–7,400</td></tr>
-  </tbody>
-</table></div>
-<h3>整趟實際花費參考</h3>
-<div class="tablewrap"><table>
-  <thead><tr><th>來源</th><th>年份</th><th>方式</th><th>每人總花費</th><th>包含</th></tr></thead>
-  <tbody>
-    <tr class="pick"><td><a href="#budget">本頁自組五天估算</a></td><td>2027/7</td><td>自組 4 人，住河口湖 3 晚、白雲荘 1 晚、包車 1 天</td><td>約 NT$28,000</td><td class="note">機票、羽田直達巴士、登山巴士、入山費、山屋、民宿、KKday 包車；不含餐費、山上花費、門票、保險、裝備</td></tr>
-    <tr><td>健行筆記〈走來走去-29〉</td><td>2024/7</td><td>自組 4 人，住御來光館</td><td>NT$20,428</td><td class="note">樂桃機票 NT$10,790、河口湖兩晚、新宿巴士、山屋、金剛杖燒印</td></tr>
-  </tbody>
-</table></div>
-
 <h2 id="budget" class="plain">自組五天花費</h2>
-<p>每人，假設 4 人同行分攤包車和住宿，匯率 ¥1 ≈ NT$0.21。巴士、入山費、山屋、包車是 2026 年公定價格；機票、住宿是估算範圍。2027 年價格還會再變。</p>
+<p>每人，假設 4 人同行分攤包車和住宿。巴士、入山費、山屋、包車是 2026 年價格；機票、住宿是預算。2027 年價格還會再變。</p>
 <p class="caption">行程：D1 台北飛羽田，搭直達巴士到河口湖。D2 搭巴士到五合目，爬到八合目住山屋。D3 凌晨攻頂，中午前下山回河口湖。D4 包車一日遊（忍野八海、新倉山淺間公園、大石公園）。D5 河口湖搭巴士回羽田，飛回台北。</p>
 <div class="tablewrap"><table>
   <thead><tr><th>項目</th><th>內容</th><th>每人</th><th>約台幣</th></tr></thead>
   <tbody>
-    <tr><td>機票</td><td class="note">台北 ⇄ 羽田來回，廉航含行李（先抓）</td><td>NT$12,000</td><td>NT$12,000</td></tr>
+    <tr><td>機票</td><td class="note">台北 ⇄ 羽田來回，廉航含行李（預算）</td><td>NT$12,000</td><td>NT$12,000</td></tr>
     <tr><td>機場巴士</td><td class="note">羽田 ⇄ 河口湖直達巴士來回，單程 ¥3,300（D1、D5）</td><td>¥6,600</td><td>NT$1,390</td></tr>
-    <tr><td>住宿</td><td class="note">河口湖民宿、青旅素泊 3 晚（D1、D3、D4），3 晚先抓 NT$7,000（Booking 2027/7/21 報價每晚 ¥4,500–7,500）</td><td>NT$7,000</td><td>NT$7,000</td></tr>
+    <tr><td>住宿</td><td class="note">河口湖 3 晚（D1、D3、D4，預算）</td><td>NT$7,000</td><td>NT$7,000</td></tr>
     <tr><td>登山巴士</td><td class="note">河口湖 ⇄ 五合目來回（D2–D3）</td><td>¥3,400</td><td>NT$710</td></tr>
     <tr><td>入山費</td><td class="note">吉田線通行費（D2）</td><td>¥4,000</td><td>NT$840</td></tr>
     <tr><td>山屋</td><td class="note">白雲荘一泊二食，平日（D2）</td><td>¥15,400</td><td>NT$3,230</td></tr>
@@ -115,64 +85,41 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
   <div class="box">
     <h3>沒算進去的</h3>
     <ul>
-      <li>餐費</li>
-      <li>山上的水、食物、廁所，下山泡湯、景點門票</li>
-      <li>旅平險、裝備</li>
-      <li>白雲荘週五 ¥16,500、週六 ¥17,600、週日 ¥16,500</li>
-      <li>包車只有 2 人時每人 NT$5,570</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3>河口湖住宿</h3>
-    <ul>
-      <li>預算先抓每人 3 晚 NT$7,000。Booking 上 2027/7/21（週三）2 人或 4 人一室的便宜民宿、青旅每晚 ¥4,500–7,500</li>
-      <li><b>Booking，2 人一室</b>（含稅）：Orange Cabin Inn ¥9,400（離站 3.6 km）、民泊ぶへいさん ¥10,800、GuestHouse Guu ¥12,543（離站 150 m，上下鋪，評分 9.3）、Hostel SAMURISE KURA ¥15,455（離站 150 m）</li>
-      <li><b>Booking，4 人一室，離站 1 km 內</b>（含稅）：Hostel SAMURISE Mt Fuji ¥20,260、GuestHouse Guu ¥26,600、SAMURISE KURA ¥26,622、TOCORO. ¥28,914，每人約 ¥5,100–7,200</li>
-      <li>Booking 上這天篩民宿、家庭旅館、日式旅館，97% 已經沒房或還沒開放，夏天要早訂</li>
-      <li><b>Booking 飯店，2 人一室</b>（含稅）：アジアホテル河口湖 ¥9,000、富士山水館 ¥9,500、東橫INN 富士河口湖大橋 ¥14,718（含早餐）、如特旅舍 ¥14,725（含早餐），每人約 ¥4,500–7,400；離站近或看得到富士山的每人 ¥13,000–20,000</li>
-      <li><b>改住富士山站附近</b>：1 km 內多是整棟出租，4 人一間 ¥25,700–29,900（Fuji View Villa、Fujiクロスゲートハウス、Fuji Mason's Villa），每人約 ¥6,400–7,500，有廚房；2 人住最便宜每人約 ¥9,600。登山巴士從富士山站發車，機場巴士也停，到河口湖站搭富士急一站；缺點是沒有湖景，KKday 包車接送範圍要先問</li>
-      <li><b>じゃらん</b>（2027/7 還不能訂，以下是起價）：</li>
-      <li><b>夢宿三代目まえふじ</b>：河口湖站走 8 分，按房計價，1–2 人 ¥6,600、最多 4 人 ¥11,000、最多 6 人 ¥15,400 起，樓下有餐廳</li>
-      <li><b>一富士荘</b>：河口湖站走 10 分，湖邊 1 分，素泊 ¥4,200、含早餐 ¥5,200、含兩餐 ¥7,500 起</li>
-      <li><b>富士見園</b>：河口湖站走 8 分，素泊 ¥4,000–6,000 起，有家族風呂</li>
-      <li><b>民宿旅館 つばめ荘</b>：湖邊 3 分，正對富士山，素泊 ¥6,200 起，只收現金、只講日文</li>
-      <li><b>民宿寿荘</b>：素泊 ¥4,000 起，7–9 月只接受直接預約，不收信用卡</li>
-      <li><b>丸弥荘</b>：溫泉民宿，離河口湖站 1 km，2026/8/9 兩人一室素泊 ¥7,898</li>
-    </ul>
-    <p class="meta">じゃらん價格都是「起」，多半是淡季價。週五、週六和盂蘭盆節會更貴。</p>
-  </div>
-  <div class="box">
-    <h3><a href="https://www.kkday.com/zh-tw/product/601647">包車：KKday #601647</a></h3>
-    <ul>
-      <li>河口湖當地包車，飯店接送，中文或日文司機</li>
-      <li>舒適 7 座（最多 5 人）5 小時 NT$9,067、8 小時 NT$11,140；10 座（最多 9 人）8 小時 NT$13,730</li>
-      <li>含油錢、過路費、停車費；07:00–12:00 出發，總里程 100 km 內</li>
-      <li>超時每小時 ¥6,000，超里程每 km ¥300，48 小時前免費取消</li>
+      <li>餐費、景點門票、下山泡湯</li>
+      <li>山上的水、食物、廁所，約 ¥3,000–5,000</li>
+      <li>旅平險；裝備租借整套約 ¥10,000–20,000</li>
+      <li>白雲荘週五、週日 ¥16,500，週六 ¥17,600</li>
     </ul>
   </div>
   <div class="box">
     <h3>機場到河口湖巴士</h3>
     <ul>
-      <li><b>羽田</b>：大人單程 ¥3,300，約 3 小時。富士急トラベル時刻表寫羽田第 3 航廈 06:45、11:50 發；2025/11 新聞稿寫 08:50 一班，班次常改，訂票時再看</li>
-      <li><b>回程</b>：河口湖站 12:00、16:10 發往羽田，坐 16:10 的話要訂晚上 20:00 以後的班機</li>
-      <li><b>成田</b>：大人單程 ¥6,000，約 3 小時 40 分。第 3 航廈 10:25、10:55 發；河口湖回成田只有 13:10 一班</li>
-      <li>乘車前 1 個月開放預約，對號座。2027 年 7 月出發，6 月才能訂</li>
-      <li>班次錯過：羽田先到新宿，再搭新宿到河口湖的巴士（約 ¥2,200，班次多）</li>
+      <li>羽田出發單程 ¥3,300，約 3 小時，一天只有 1–2 班（時刻表寫 06:45、11:50），機票要配合巴士時間買</li>
+      <li>回程河口湖站 12:00、16:10 發，坐 16:10 要訂 20:00 以後的班機</li>
+      <li>乘車前 1 個月開放預約，對號座</li>
+      <li>錯過班次：先到新宿，再搭新宿到河口湖的巴士（約 ¥2,200，班次多）</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>河口湖住宿</h3>
+    <ul>
+      <li>Booking 2027/7/21（週三）便宜民宿、青旅每人每晚 ¥4,500–7,500，97% 已沒房或還沒開放，要早訂</li>
+      <li>河口湖站 1 km 內 4 人一室：Hostel SAMURISE Mt Fuji ¥20,260、GuestHouse Guu ¥26,600、TOCORO. ¥28,914</li>
+      <li>富士山站附近：多是整棟出租，4 人一間 ¥25,700–29,900，登山巴士從這站發車，但沒有湖景</li>
+      <li>下山後想泡溫泉：富士河口湖リゾートホテル，河口湖站走 11 分，露天風呂看得到富士山，7/21 兩人 ¥30,400</li>
     </ul>
   </div>
   <div class="box notes">
     <h3>排程注意</h3>
     <ul>
-      <li>D2 要選平日晚上住山屋，週五、六貴 ¥1,000–2,200</li>
-      <li>D4 包車 48 小時前可免費取消，D2–D3 遇到壞天氣沒辦法換日，因為山屋難訂</li>
-      <li>機場直達巴士一天只有 1–2 班，機票要配合巴士時間買，見「機場到河口湖巴士」</li>
+      <li>D2 選平日晚上住山屋</li>
+      <li>D2–D3 遇到壞天氣沒辦法換日，因為山屋難訂；D4 包車 48 小時前可免費取消</li>
     </ul>
   </div>
 </div>
-<p class="caption">包車價格是 2026/11/18 在 KKday 選方案看到的價格（最早可訂日 2026/11/20），2027 年 7 月可能不同。</p>
 
-<h3>改報入野門團，其他天自組</h3>
-<p>登山的兩天改跟入野門團，D4 包車和 D5 回程跟上面一樣。每人計算，住宿照上面 3 晚 NT$7,000 平均。</p>
+<h2 id="plans" class="plain">改報入野門團，其他天自組</h2>
+<p>登山的兩天改跟入野門團，D4 包車和 D5 回程跟上面一樣。每人計算，住宿照 3 晚 NT$7,000 平均。</p>
 <div class="tablewrap"><table>
   <thead><tr><th>項目</th><th>全自組</th><th>入野門兩天＋自組</th><th>入野門三天＋自組</th></tr></thead>
   <tbody>
@@ -191,18 +138,12 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
 </table></div>
 <div class="tips">
   <div class="box">
-    <h3>入野門兩天＋自組</h3>
+    <h3>入野門團重點</h3>
     <ul>
-      <li>有嚮導、代訂山屋，比三天團每人少 NT$4,500，D1、D3 都住河口湖</li>
-      <li>可加購專車 NT$3,000，河口湖 10:00 上車，含下山泡湯，名額有限；加購後每人約 NT$42,900</li>
-      <li>自己搭登山巴士要趕上 11:00 五合目集合，班次先查好</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3>入野門三天＋自組</h3>
-    <ul>
-      <li>多了 D1 晚上的裝備檢查、帶去採買，以及 D3 的泡湯</li>
-      <li>D1 要 17:00 前到巢鴨，班機最好中午前落地</li>
+      <li>台灣山域嚮導帶隊，代訂山屋（以白雲莊為主），沒床位改其他八合目山屋或富士宮線萬年雪山莊</li>
+      <li>兩天團可加購專車 NT$3,000，河口湖 10:00 上車，含下山泡湯，名額有限；加購後每人約 NT$42,900</li>
+      <li>三天團多了 D1 晚上的裝備檢查、帶去採買和 D3 泡湯；D1 要 17:00 前到巢鴨，班機最好中午前落地</li>
+      <li>團費不含入山費；報名要填護照資料、上傳護照照片</li>
     </ul>
   </div>
   <div class="box notes">
@@ -210,115 +151,33 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
     <ul>
       <li>三天團寫 D3「新宿解散」，回程能不能在河口湖站下車</li>
       <li>三天團不上山的大行李寄放在哪，能不能跟著專車到河口湖</li>
-      <li>兩天團自己到五合目集合，遇到登山巴士誤點怎麼處理</li>
+      <li>兩天團遇到登山巴士誤點趕不上 11:00 集合怎麼處理</li>
+      <li>取消規定</li>
     </ul>
   </div>
 </div>
 
-<h3>D4 交通：包車 vs 兩天自駕</h3>
-<p>自駕方案是 D3 下山後 14:00 在河口湖站附近取車、D5 10:00 還車再搭機場巴士。租金是 skyticket 上 2026/12/10–12/12 的淡季報價（含免責補償），2027 年 7 月還不能訂，旺季會更貴。每人以 4 人分攤計算。</p>
+<h2 id="d4" class="plain">D4 交通：包車 vs 兩天自駕</h2>
+<p>自駕是 D3 下山後 14:00 在河口湖站附近取車、D5 10:00 還車再搭機場巴士。租金是 skyticket 上 2026/12 的淡季報價（含免責補償），2027 年 7 月還不能訂，旺季會更貴。每人以 4 人分攤計算。</p>
 <div class="tablewrap"><table>
-  <thead><tr><th>項目</th><th>KKday #601647 包車</th><th>兩天自駕（44 小時）</th></tr></thead>
+  <thead><tr><th>項目</th><th><a href="https://www.kkday.com/zh-tw/product/601647">KKday #601647 包車</a></th><th>兩天自駕（44 小時）</th></tr></thead>
   <tbody>
-    <tr><td>費用</td><td class="note">舒適 7 座 8 小時 NT$11,140，含油錢、過路費、停車費</td><td class="note">小型車（Yaris、Note）¥17,000–18,040；Sienta 6 人座 ¥24,500–25,300；油錢約 ¥2,000</td></tr>
+    <tr><td>費用</td><td class="note">舒適 7 座（最多 5 人）8 小時 NT$11,140，含油錢、過路費、停車費</td><td class="note">小型車 ¥17,000–18,040；Sienta 6 人座 ¥24,500–25,300；油錢約 ¥2,000</td></tr>
     <tr class="pick"><td>每人</td><td>NT$2,785</td><td>小型車約 NT$1,000–1,050；Sienta 約 NT$1,390–1,430</td></tr>
-    <tr><td>行程彈性</td><td class="note">8 小時、100 km 內，超時每小時 ¥6,000</td><td class="note">D3 傍晚、D4 全天、D5 早上都能用車，可去山中湖ホテルマウント富士泡日歸溫泉</td></tr>
-    <tr><td>司機</td><td class="note">中文或日文司機，大家都能休息</td><td class="note">要有人開車，D3 剛下山睡眠不足，那天最好不開</td></tr>
+    <tr><td>限制</td><td class="note">07:00–12:00 出發，8 小時、100 km 內，超時每小時 ¥6,000</td><td class="note">D3 傍晚、D4 全天、D5 早上都能用車，可去山中湖ホテルマウント富士泡日歸溫泉</td></tr>
+    <tr><td>司機</td><td class="note">中文或日文司機</td><td class="note">要有人開車，D3 剛下山睡眠不足，那天最好不開</td></tr>
     <tr><td>要準備的</td><td class="note">下單時留上下車地址、聯絡方式</td><td class="note">台灣駕照正本加監理站日文譯本（約 NT$100），國際駕照不能用；靠左行駛</td></tr>
     <tr><td>取消</td><td class="note">48 小時前免費</td><td class="note">依各租車公司規定</td></tr>
   </tbody>
 </table></div>
 <div class="tips">
   <div class="box">
-    <h3>河口湖站附近租車</h3>
+    <h3>租車重點</h3>
     <ul>
-      <li>走 3–7 分內 4 家，都沒有接送：ニッポンレンタカー（3 分，08:00–19:00）、バジェット（4 分，09:00–18:00）、Jネット（5 分，09:00–19:00）、トヨタ（7 分，08:00–20:00）</li>
-      <li>4 個大人加行李和登山背包，小型車後車廂大概只放得下 4 件，建議租 Sienta</li>
-      <li>想避開 D3 開車，可改成 D4 早上取車，租約約 26 小時，價格要再查</li>
-    </ul>
-  </div>
-  <div class="box notes">
-    <h3>不建議 D1 就取車</h3>
-    <ul>
-      <li>D1 15:00 到 D5 10:00 共 91 小時，淡季小型車 ¥32,400–34,760、Sienta ¥45,500–47,300</li>
-      <li>富士スバルライン 7/3–9/10 禁止自用車上五合目，爬山時車要停富士山パーキング ¥1,000，再轉接駁巴士來回 ¥3,400</li>
-      <li>車子空停兩天，每人只比包車省 NT$100–800</li>
-    </ul>
-  </div>
-</div>
-
-<h2 id="todo" class="plain">要處理的事</h2>
-<div class="tablewrap"><table>
-  <thead><tr><th>事項</th><th>荒野旅人</th><th>入野門</th><th>自組</th></tr></thead>
-  <tbody>
-    <tr><td>山屋訂位</td><td class="note">旅行社處理，訂不到改走富士宮線（住九合目萬年雪山莊）</td><td class="note">代訂，以白雲莊為主；沒床位改其他八合目、本八合目山屋，或改富士宮線，萬年雪山莊保證入住</td><td class="note">自己搶，開放當天常就額滿。搶不到可透過日本旅行社訂，但貴約 50%</td></tr>
-    <tr><td>入山預約</td><td class="note">頁面沒寫誰處理，要問</td><td class="note">入山費自付，預約誰處理要問</td><td class="note">自己在山梨縣官網預約、刷卡繳費</td></tr>
-    <tr><td>日期</td><td class="note">13 個固定梯次（7/13–8/31），12 人成團</td><td class="note">兩天一夜 19 梯（7/1–9/7），6 人成團；未滿 6 人另外報價，可換 Alphard 商旅車</td><td class="note">自己挑平日、留預備日</td></tr>
-    <tr><td>交通</td><td class="note">自己到河口湖車站集合</td><td class="note">自己到五合目，或加購專車</td><td class="note">自己搭巴士</td></tr>
-    <tr><td>高山症、天候判斷</td><td class="note">嚮導決定前進或撤退</td><td class="note">嚮導決定</td><td class="note">自己判斷</td></tr>
-    <tr><td>裝備</td><td class="note">頁面沒提租借</td><td class="note">三天兩夜、五天四夜第一晚帶去採買和檢查裝備</td><td class="note">自備或租借，整套約 ¥10,000–20,000</td></tr>
-    <tr><td>取消</td><td class="note">出發前 31 天以上不扣錢；天候無法登頂不退費</td><td class="note">表單沒寫，要問</td><td class="note">依各山屋規定；入山費預約日兩天後不退</td></tr>
-  </tbody>
-</table></div>
-<div class="tips">
-  <div class="box">
-    <h3>荒野旅人團的細節</h3>
-    <ul>
-      <li>2 天 1 夜，NT$17,900 起，訂金 NT$10,000</li>
-      <li>上限 18 人，12 人成團，雙台灣嚮導</li>
-      <li>不含機票、入山費、自由活動消費</li>
-      <li>一人報名可能補單人房差，匯率大幅波動時團費可能調整</li>
-      <li>建議成團確認後再買機票</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3>入野門團的細節</h3>
-    <ul>
-      <li>報名表沒有公開，價格來自 2026/11/17 的表單內容</li>
-      <li><b>兩天一夜 NT$15,900</b>：11:00 五合目集合、五合目解散；加購專車和下山溫泉 NT$3,000</li>
-      <li><b>三天兩夜 NT$24,000</b>：D1 17:00 巢鴨飯店集合、檢查裝備、帶去採買；D2 專車上山住山屋；D3 登頂、泡湯、新宿解散。含巢鴨飯店一晚，單人房加 NT$1,200</li>
-      <li><b>五天四夜 NT$39,800</b>：成田機場接送、巢鴨飯店、山中湖溫泉飯店帝王蟹自助、忍野八海和河口湖一日遊。單人房 3 晚加 NT$4,000</li>
-      <li>三種方案同一天上山，可以跟朋友選不同方案</li>
-      <li>報名要填護照資料、身分證字號、上傳護照照片</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3>適合誰</h3>
-    <ul>
-      <li><b>自組</b>：有 3,000 m 以上經驗、2 人以上、能早點搶山屋</li>
-      <li><b>荒野旅人</b>：想走吉田線、要雙嚮導、取消 31 天前不扣錢</li>
-      <li><b>入野門兩天一夜</b>：想走吉田線、自己會到五合目，團費最便宜；三天兩夜適合想要人帶著採買裝備的新手</li>
-    </ul>
-  </div>
-</div>
-
-<h2 id="rules" class="plain">入山規定（2025–2026）</h2>
-<div class="tips">
-  <div class="box">
-    <h3>吉田線（山梨縣）</h3>
-    <ul>
-      <li>入山費 ¥4,000／人，2025 年起從 ¥2,000 加倍，線上預約刷卡</li>
-      <li>14:00 到隔天 03:00 封閉登山道，有山屋預約的人除外</li>
-      <li>每日上限 4,000 人</li>
-      <li>入山時發綁繩扣在背包上，弄丟要重繳</li>
-      <li>2026 年通行預約 4 月開始受理</li>
-      <li>2026 年富士スバルライン自駕管制 7/3–9/10，要停富士山停車場轉接駁巴士</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3>靜岡縣三條路線</h3>
-    <ul>
-      <li>富士宮、須走、御殿場線 2025 年起也收 ¥4,000</li>
-      <li>要先完成線上安全學習，入山時出示畫面</li>
-      <li>2026 年起同樣實施夜間管制</li>
-      <li>富士宮、御殿場線和山頂繞火山口 7/10 才開放</li>
-    </ul>
-  </div>
-  <div class="box notes">
-    <h3>2027 年要再確認</h3>
-    <ul>
-      <li>規定每年都在改，出發前以富士登山官方網站為準</li>
-      <li>山屋價格和開放訂位日期每間不同、每年不同</li>
+      <li>河口湖站走 3–7 分內有 4 家：ニッポン（08:00–19:00）、バジェット（09:00–18:00）、Jネット（09:00–19:00）、トヨタ（08:00–20:00）</li>
+      <li>4 個大人加行李和登山背包，建議租 Sienta</li>
+      <li>想避開 D3 開車，可改成 D4 早上取車，價格要再查</li>
+      <li>不建議 D1 就取車：7/3–9/10 自用車不能上五合目，爬山時車子空停兩天，每人只比包車省 NT$100–800</li>
     </ul>
   </div>
 </div>
@@ -331,7 +190,6 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
   <span><i style="background:var(--signal-bg)"></i>可以</span>
   <span><i style="background:var(--warn-bg)"></i>避開（日本連假、盂蘭盆節）</span>
   <span><i style="background:repeating-linear-gradient(135deg,transparent 0 5px,var(--surface2) 5px 7px)"></i>梅雨季</span>
-  <span><i class="dot d1"></i>荒野旅人出團日</span>
   <span><i class="dot d3"></i>入野門上山日</span>
 </div>
 <div class="tablewrap"><table>
@@ -345,17 +203,8 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
     <tr><td>9/1 – 9/10</td><td>登山季最後十天</td><td class="note">人最少，但颱風季、最冷，9/10 封山</td></tr>
   </tbody>
 </table></div>
-<h3>荒野旅人梯次對照</h3>
-<div class="tablewrap"><table>
-  <thead><tr><th>評價</th><th>梯次</th></tr></thead>
-  <tbody>
-    <tr class="pick"><td>推薦</td><td class="note">7/22–23（四五）、7/28–29（三四）、8/23–24（一二）、8/26–27（四五）</td></tr>
-    <tr><td>普通</td><td class="note">7/13–14（梅雨季）、7/25–26（日一）、8/9–10（接近盂蘭盆節）、8/30–31（較冷、颱風）</td></tr>
-    <tr class="dim"><td>避開</td><td class="note">7/16–17、7/31–8/1、8/12–13、8/15–16、8/20–21</td></tr>
-  </tbody>
-</table></div>
 <h3>入野門梯次對照</h3>
-<p class="caption">日期為上山日到登頂日。三天兩夜在前一天到巢鴨集合，五天四夜只在其中 10 個上山日出團。</p>
+<p class="caption">日期為上山日到登頂日，三天團在前一天到巢鴨集合。</p>
 <div class="tablewrap"><table>
   <thead><tr><th>評價</th><th>梯次</th></tr></thead>
   <tbody>
@@ -365,259 +214,145 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
   </tbody>
 </table></div>
 
-<h2 id="reports" class="plain">自組心得（2024–2026）</h2>
-<div class="tips">
-  <div class="box">
-    <h3><a href="https://lynnbright.tw/zh/go-hiking-mt-fuji-zh-tw/">Lynn RemoteEverywhere</a></h3>
-    <p class="meta">2025/7/12–13・自組・八合目白雲莊</p>
-    <ul>
-      <li>前一晚住河口湖一富士莊 ¥12,600，06:40 首班巴士上五合目</li>
-      <li>08:22 起登、11:59 到山屋；隔天 02:15 出發、04:31 登頂、07:30 上劍峰</li>
-      <li>4 月下旬公告訂位日，「開放 10 分鐘內位子就會搶光」</li>
-      <li>巴士只收現金，大行李放河口湖站置物櫃 ¥800–1,200／天</li>
-      <li>剛好碰上好天氣，隔天變天很多隊撤退</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3><a href="https://www.dcard.tw/f/japan_travel/p/259401651">Dcard 日本旅遊板</a></h3>
-    <p class="meta">2025・自組 2 人・八合五勺</p>
-    <ul>
-      <li>山屋網站一開放就申請，「還蠻不好搶的」，建議 3–4 月開始盯</li>
-      <li>裝備全在やまどうぐレンタル屋租，可寄到家、超商寄回，或在五合目取還</li>
-      <li>13:00 起登、19:00 到山屋；02:30 出發，70–80 分鐘到山頂</li>
-      <li>山上水一杯約 ¥500、頭燈約 ¥1,500，帶 50 個 ¥100 硬幣</li>
-      <li>下雨起霧，日出只看到一部分；下山比上山更累</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3><a href="https://mnoopy.com/fuji-climbing-yoshida-route-review/">mnoopy（日文）</a></h3>
-    <p class="meta">2026/8/6–7・自組 2 人・御來光館</p>
-    <ul>
-      <li>山屋開放首日就額滿，改透過旅行社訂，每人 ¥23,980（直接訂 ¥16,000）</li>
-      <li>看醫生拿高山症處方藥，沒明顯症狀但全程呼吸困難</li>
-      <li>起登前在五合目先待一段時間適應高度，很有用</li>
-      <li>咖哩 ¥1,800、廁所 ¥200–300，暖暖包多帶</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3><a href="https://hiking.biji.co/index.php?q=review&amp;act=info&amp;review_id=32550">健行筆記〈走來走去-29〉</a></h3>
-    <p class="meta">2024/7・自組 4 人・御來光館</p>
-    <ul>
-      <li>御來光館含兩餐 ¥15,000，四人開放當天一起搶，另訂トモエ館當備案</li>
-      <li>河口湖 ⇄ 五合目巴士來回 ¥2,800，當天現場買</li>
-      <li>登頂和下山都排隊，「多到像動物大遷徙」</li>
-      <li>火山灰被強風吹，要戴眼鏡和圍脖</li>
-      <li>總花費 NT$20,428（含機票）</li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3><a href="https://hiking.biji.co/index.php?q=review&amp;act=info&amp;review_id=34411">健行筆記 2025 完整攻略</a></h3>
-    <p class="meta">2024/7/15–16・自組・本八合目トモエ館</p>
-    <ul>
-      <li>トモエ館含兩餐 ¥12,000–14,000，有插座、有單間</li>
-      <li>開放前就上線才訂到，晚 30 分鐘官網就掛了</li>
-      <li>登頂日大雨起霧，半小時的路塞了 1.5 小時，沒繞火山口</li>
-      <li>體感比合歡北峰難：碎石費力、無遮蔽、人多</li>
-      <li>建議 7 月中以後去、避開日本連假，山上不能撐傘</li>
-    </ul>
-  </div>
-  <div class="box notes">
-    <h3><a href="https://www.ptt.cc/bbs/Japan_Travel/M.1755870510.A.DFD.html">PTT Japan_Travel（跟團）</a></h3>
-    <p class="meta">2025/8・第三方平台團・白雲莊</p>
-    <ul>
-      <li>遊覽車塞車，15:30 才起登，21:00 才摸黑到山屋</li>
-      <li>只睡 3 小時就出發攻頂</li>
-      <li>作者坦言低估了七合目到八合目的難度</li>
-    </ul>
-  </div>
-</div>
-
-<h2 id="huts" class="plain">吉田線山屋一覽</h2>
-<p>價格和特色來自各山屋官網的 2026 年資料（每人一泊二食，區間是平日到週六），2026/11/18 查詢。標色的是 3,200 m 以上、適合隔天凌晨攻頂的山屋。點山屋名稱可以開官網。</p>
+<h2 id="huts" class="plain">吉田線山屋</h2>
+<p>各山屋官網的 2026 年資料（每人一泊二食，區間是平日到週六）。標色的是 3,200 m 以上、適合隔天凌晨攻頂的山屋。點山屋名稱可以開官網。</p>
 <div class="tablewrap"><table>
-  <thead><tr><th>山屋</th><th>位置</th><th>標高</th><th>2026 一泊二食</th><th>特色</th><th>電話</th></tr></thead>
+  <thead><tr><th>山屋</th><th>位置</th><th>標高</th><th>2026 一泊二食</th><th>特色</th></tr></thead>
   <tbody>
-    <tr class="dim"><td><a href="https://mtfuji.satogoya.jp/">佐藤小屋</a></td><td>五合目</td><td>2,230 m</td><td>¥12,000</td><td class="note">唯一全年營業；有 Wi-Fi，各房都能充電；個室每間加 ¥10,000</td><td>090-3133-2230</td></tr>
-    <tr class="dim"><td><a href="http://www.fujisan5.com/">富士山みはらし</a></td><td>五合目</td><td>2,305 m</td><td>只有素泊，¥8,000 起</td><td class="note">有個室；附寢具，不用帶睡袋；餐廳 7:00–18:00</td><td>0555-72-1266</td></tr>
-    <tr class="dim"><td><a href="https://www.unjokaku.jp/">富士急雲上閣</a></td><td>五合目</td><td>2,305 m</td><td>只有膠囊素泊，¥9,000 起</td><td class="note">膠囊旅館；唯一能淋浴（¥500／5 分鐘）；不賣餐，禁用爐具</td><td>0555-72-1355</td></tr>
-    <tr class="dim"><td><a href="https://seikanso.jp/">里見平星観荘</a></td><td>六合目</td><td>2,325 m</td><td>¥13,000</td><td class="note">招牌爆彈漢堡排；每人枕邊有插座；有 Wi-Fi；現場可刷卡</td><td>0555-24-6090</td></tr>
-    <tr><td>花小屋</td><td>七合目</td><td>2,700 m</td><td>未公布</td><td class="note">官網已失效，只接受電話預約</td><td>090-7234-9955</td></tr>
-    <tr><td><a href="https://www.hinodekan-fujiyoshida.com/">日の出館</a></td><td>七合目</td><td>2,720 m</td><td>¥11,000–12,100</td><td class="note">江戶時代就有；正面看日出；只有通鋪；不提供充電</td><td>0555-24-6522</td></tr>
-    <tr><td><a href="https://tomoekan.com/7tomoekan/">七合目トモエ館</a></td><td>七合目</td><td>2,740 m</td><td>¥12,000–14,000</td><td class="note">全部是個室（1、2、4、6 人房），房內有插座；漢堡排咖哩；沒有 Wi-Fi</td><td>0555-24-6521</td></tr>
-    <tr><td><a href="https://kamaiwakan.jpn.org/">鎌岩館</a></td><td>七合目</td><td>2,790 m</td><td>只附晚餐，¥13,500–16,000</td><td class="note">每床有插座和布簾；Starlink Wi-Fi；11:00 就能入住適應高度；個室另計</td><td>080-1299-0223</td></tr>
-    <tr><td><a href="https://www.fuji-ichikan.jp/">富士一館</a></td><td>七合目</td><td>2,800 m</td><td>官網沒列</td><td class="note">有充電插座；是元祖室的姊妹館</td><td>080-1036-6691</td></tr>
-    <tr><td><a href="https://toriiso.com/">鳥居荘</a></td><td>本七合目</td><td>2,900 m</td><td>¥12,650–14,850</td><td class="note">在紅鳥居前看日出；個室有插座，通鋪沒有；2026 年施工，只開個室</td><td>0555-84-2050</td></tr>
-    <tr><td><a href="https://www.fuji-toyokan.jp/">東洋館</a></td><td>七合目</td><td>3,000 m</td><td>¥15,400–17,600</td><td class="note">單人床位有布簾、隔板和插座；大廳有 Wi-Fi；現場可刷卡</td><td>0555-22-1040</td></tr>
-    <tr><td><a href="https://www.mfi.or.jp/~taisikan/">太子館</a></td><td>八合目</td><td>3,100 m</td><td>¥14,500–16,500</td><td class="note">檜木建築；館內有八合目救護所，醫師 24 小時駐守；小房有插座</td><td>0555-24-6516</td></tr>
-    <tr><td><a href="https://www.horaikan.jp/">蓬莱館</a></td><td>八合目</td><td>3,150 m</td><td>¥15,000–17,000</td><td class="note">通鋪有隔簾；咖哩可換烏龍麵；只有 4 間有窗包間能充電</td><td>0555-24-6515</td></tr>
-    <tr class="pick"><td><a href="http://fujisan-hakuun.com/ja/">白雲荘</a></td><td>八合目</td><td>3,200 m</td><td>¥15,400–17,600</td><td class="note">每床有捲簾；漢堡排香腸咖哩；廁所付一次就能一直用；可代充手機</td><td>0555-24-6514</td></tr>
-    <tr class="pick"><td><a href="https://www.ganso-muro.jp/">元祖室</a></td><td>八合目</td><td>3,250 m</td><td>¥14,500–17,000</td><td class="note">室町時代這裡就有堂宇；公共區有充電插座；只有通鋪</td><td>0555-24-6513</td></tr>
-    <tr class="pick"><td><a href="https://www.fujisanhotel.com/">本八合目富士山ホテル</a></td><td>本八合目</td><td>3,400 m</td><td>¥12,000–14,500</td><td class="note">「雙層床＋咖哩」的起源；完全不能充電；現場付款</td><td>0555-24-6512</td></tr>
-    <tr class="pick"><td><a href="https://tomoekan.com/8tomoekan/">本八合目トモエ館</a></td><td>本八合目</td><td>3,400 m</td><td>¥13,500–15,500</td><td class="note">全部是個室，房內有插座和羽絨被；漢堡排咖哩；可以寄放行李去攻頂</td><td>0555-24-6511</td></tr>
-    <tr class="pick"><td><a href="https://goraikoukan.jp/">御来光館</a></td><td>八合五勺</td><td>3,450 m</td><td>¥16,000</td><td class="note">離山頂最近，在小屋就看得到日出；晚餐三選一；附棉被</td><td>0555-73-8815</td></tr>
+    <tr><td><a href="https://www.hinodekan-fujiyoshida.com/">日の出館</a></td><td>七合目</td><td>2,720 m</td><td>¥11,000–12,100</td><td class="note">正面看日出；只有通鋪；不提供充電</td></tr>
+    <tr><td><a href="https://tomoekan.com/7tomoekan/">七合目トモエ館</a></td><td>七合目</td><td>2,740 m</td><td>¥12,000–14,000</td><td class="note">全部是個室，房內有插座</td></tr>
+    <tr><td><a href="https://kamaiwakan.jpn.org/">鎌岩館</a></td><td>七合目</td><td>2,790 m</td><td>只附晚餐，¥13,500–16,000</td><td class="note">每床有插座和布簾；11:00 就能入住適應高度</td></tr>
+    <tr><td><a href="https://www.fuji-ichikan.jp/">富士一館</a></td><td>七合目</td><td>2,800 m</td><td>官網沒列</td><td class="note">有充電插座</td></tr>
+    <tr><td><a href="https://toriiso.com/">鳥居荘</a></td><td>本七合目</td><td>2,900 m</td><td>¥12,650–14,850</td><td class="note">個室有插座；2026 年施工只開個室</td></tr>
+    <tr><td><a href="https://www.fuji-toyokan.jp/">東洋館</a></td><td>七合目</td><td>3,000 m</td><td>¥15,400–17,600</td><td class="note">單人床位有布簾和插座</td></tr>
+    <tr><td><a href="https://www.mfi.or.jp/~taisikan/">太子館</a></td><td>八合目</td><td>3,100 m</td><td>¥14,500–16,500</td><td class="note">館內有救護所，醫師 24 小時駐守</td></tr>
+    <tr><td><a href="https://www.horaikan.jp/">蓬莱館</a></td><td>八合目</td><td>3,150 m</td><td>¥15,000–17,000</td><td class="note">通鋪有隔簾</td></tr>
+    <tr class="pick"><td><a href="http://fujisan-hakuun.com/ja/">白雲荘</a></td><td>八合目</td><td>3,200 m</td><td>¥15,400–17,600</td><td class="note">每床有捲簾；可代充手機</td></tr>
+    <tr class="pick"><td><a href="https://www.ganso-muro.jp/">元祖室</a></td><td>八合目</td><td>3,250 m</td><td>¥14,500–17,000</td><td class="note">公共區有充電插座</td></tr>
+    <tr class="pick"><td><a href="https://www.fujisanhotel.com/">本八合目富士山ホテル</a></td><td>本八合目</td><td>3,400 m</td><td>¥12,000–14,500</td><td class="note">台灣人基本上訂不到（見下方）</td></tr>
+    <tr class="pick"><td><a href="https://tomoekan.com/8tomoekan/">本八合目トモエ館</a></td><td>本八合目</td><td>3,400 m</td><td>¥13,500–15,500</td><td class="note">全部是個室，房內有插座；可寄放行李去攻頂</td></tr>
+    <tr class="pick"><td><a href="https://goraikoukan.jp/">御来光館</a></td><td>八合五勺</td><td>3,450 m</td><td>¥16,000</td><td class="note">離山頂最近，在小屋就看得到日出</td></tr>
   </tbody>
 </table></div>
 
 <h3>2026 年訂房方式</h3>
-<p>2026 年全部改成網路預約，只有花小屋還要打電話。除了富士山ホテル，訂房時都要刷卡或用 PayPay。表格中「訂好就收 5%」是指預約一成立，取消就要付 5%。</p>
+<p>全部網路預約。除了富士山ホテル，訂房時都要刷卡或用 PayPay。「訂好就收 5%」是指預約一成立，取消就要付 5%。</p>
 <div class="tablewrap"><table>
-  <thead><tr><th>山屋</th><th>預約系統</th><th>2026 開放</th><th>付款</th><th>取消費</th><th>2027 消息</th></tr></thead>
+  <thead><tr><th>山屋</th><th>預約系統</th><th>2026 開放</th><th>取消費</th><th>2027 消息</th></tr></thead>
   <tbody>
-    <tr><td>日の出館</td><td>やまたん</td><td>4/11 09:00</td><td>信用卡</td><td>31 天前取消免費</td><td>未公布</td></tr>
-    <tr><td>七合目トモエ館</td><td>官網月曆，不用註冊</td><td>5/11 00:00</td><td class="note">先預約，90–10 天前刷卡；提早付每人折 ¥1,000</td><td>9 天前起收 30%</td><td>未公布</td></tr>
-    <tr><td>鎌岩館</td><td>官網，有繁中介面</td><td class="note">5/8 10:00（英文站 5/1 10:00）</td><td>3D 驗證信用卡、PayPay</td><td>訂好就收 5%</td><td>黃金週後開放，4 月公告</td></tr>
-    <tr><td>富士一館</td><td>官網，1 人算 1 室</td><td>5 月中旬</td><td>信用卡、PayPay</td><td>訂好就收 5%</td><td>5 月中旬</td></tr>
-    <tr><td>鳥居荘</td><td>やまたん</td><td>沒有留下紀錄</td><td>信用卡</td><td>59 天前起收 5%</td><td>約 5/10</td></tr>
-    <tr><td>東洋館</td><td>489pro</td><td>5/26 10:00</td><td>3D 驗證信用卡、PayPay</td><td>訂好就收 5%</td><td>5 月中旬，3–4 月公告</td></tr>
-    <tr><td>太子館</td><td>てなわん</td><td class="note">分四梯，都是 09:00：5/11 開 6/30–7/15、5/12 開 7/16–7/31、5/13 開 8/1–8/15、5/14 開 8/16–9/9</td><td>3D 驗證信用卡、PayPay</td><td>訂好就收 5%</td><td>5 月中旬，4 月初公告</td></tr>
-    <tr><td>蓬莱館</td><td>489 系統</td><td>5/12 09:00</td><td>信用卡</td><td>14 天前取消免費</td><td>未公布</td></tr>
-    <tr class="pick"><td>白雲荘</td><td>やまたん（不接電話）</td><td>5/1 09:30</td><td>信用卡</td><td>30 天前取消免費</td><td>未公布</td></tr>
-    <tr class="pick"><td>元祖室</td><td>489 系統，1 人算 1 室，不用註冊</td><td class="note">官網沒寫；二手資料說 5/16 10:00</td><td>信用卡</td><td>訂好就收 5%</td><td>未公布</td></tr>
-    <tr class="pick"><td>本八合目富士山ホテル</td><td>官網，用 Google 帳號登入</td><td>5/10 左右</td><td>現場付現或刷卡</td><td>20 天前取消免費</td><td class="note">未公布；2026 年的時程是前一年 11/18 公告的</td></tr>
-    <tr class="pick"><td>本八合目トモエ館</td><td>官網月曆，不用註冊</td><td>5/11 00:00</td><td class="note">先預約，90–10 天前刷卡；提早付有折扣</td><td>9 天前起收 30%</td><td>未公布</td></tr>
-    <tr class="pick"><td>御来光館</td><td>官網日曆，非日本居住者走英文入口</td><td>5/11 12:00</td><td>信用卡</td><td>20 天前取消免費</td><td>官網連不上，無法確認</td></tr>
+    <tr><td>日の出館</td><td>やまたん</td><td>4/11 09:00</td><td>31 天前取消免費</td><td>未公布</td></tr>
+    <tr><td>七合目トモエ館</td><td>官網月曆，不用註冊；90–10 天前刷卡</td><td>5/11 00:00</td><td>9 天前起收 30%</td><td>未公布</td></tr>
+    <tr><td>鎌岩館</td><td>官網，有繁中介面</td><td>5/8 10:00</td><td>訂好就收 5%</td><td>黃金週後開放，4 月公告</td></tr>
+    <tr><td>富士一館</td><td>官網，1 人算 1 室</td><td>5 月中旬</td><td>訂好就收 5%</td><td>5 月中旬</td></tr>
+    <tr><td>鳥居荘</td><td>やまたん</td><td>沒有紀錄</td><td>59 天前起收 5%</td><td>約 5/10</td></tr>
+    <tr><td>東洋館</td><td>489pro</td><td>5/26 10:00</td><td>訂好就收 5%</td><td>5 月中旬，3–4 月公告</td></tr>
+    <tr><td>太子館</td><td>てなわん</td><td class="note">分四梯 09:00：5/11 開 6/30–7/15、5/12 開 7/16–7/31、5/13 開 8/1–8/15、5/14 開 8/16–9/9</td><td>訂好就收 5%</td><td>5 月中旬，4 月初公告</td></tr>
+    <tr><td>蓬莱館</td><td>489 系統</td><td>5/12 09:00</td><td>14 天前取消免費</td><td>未公布</td></tr>
+    <tr class="pick"><td>白雲荘</td><td>やまたん</td><td>5/1 09:30</td><td>30 天前取消免費</td><td>未公布</td></tr>
+    <tr class="pick"><td>元祖室</td><td>489 系統，1 人算 1 室</td><td class="note">官網沒寫；二手資料說 5/16 10:00</td><td>訂好就收 5%</td><td>未公布</td></tr>
+    <tr class="pick"><td>本八合目トモエ館</td><td>官網月曆，不用註冊；90–10 天前刷卡</td><td>5/11 00:00</td><td>9 天前起收 30%</td><td>未公布</td></tr>
+    <tr class="pick"><td>御来光館</td><td>官網日曆，非日本居住者走英文入口</td><td>5/11 12:00</td><td>20 天前取消免費</td><td>無法確認</td></tr>
   </tbody>
 </table></div>
-<p class="caption">五、六合目：佐藤小屋和星観荘用やまたん（星観荘寫 2027 年春天開放）；みはらし 4/1 起開放，用 489ban；雲上閣 4/10 12:00 開放，用 489pro，91 天前取消免費。</p>
 <div class="tips">
-  <div class="box notes">
-    <h3>台灣人注意：富士山ホテル訂不到</h3>
-    <ul>
-      <li>網路預約只收日本國內的個人，海外居住者和旅行社代訂都不受理</li>
-      <li>只能從日本的網域連線，台灣的網路很可能被擋</li>
-      <li>2026 年英文預約暫停，只能找 Fuji Mountain Guides 代訂，每人 ¥1,000，不退</li>
-    </ul>
-  </div>
   <div class="box">
     <h3>やまたん流程（白雲荘、鳥居荘、日の出館）</h3>
     <ol>
       <li>開放前先註冊帳號，填好個人資料和信用卡</li>
       <li>在小屋頁點「やまたんネットで予約する」，選日期</li>
-      <li>選房型、餐食、男女人數（鳥居荘的個室要切到「個室」分頁）</li>
+      <li>選房型、餐食、男女人數</li>
       <li>同意規約、按確定，收到確認信</li>
     </ol>
-    <p class="meta">介面有英文。2026/8/5 起改成入住前 30 天扣款。白雲荘發現重複訂房會把全部訂單作廢。</p>
+    <p class="meta">介面有英文。白雲荘發現重複訂房會把全部訂單作廢。</p>
   </div>
   <div class="box">
     <h3>官網自建系統（トモエ館、元祖室、富士一館、御来光館）</h3>
     <ol>
       <li>開放時在月曆上點「○」或剩餘數字</li>
-      <li>填資料；元祖室和富士一館是 1 人算 1 室，5 個人要訂 5 室</li>
+      <li>填資料；元祖室和富士一館 5 個人要訂 5 室</li>
       <li>刷卡，收到「予約完了」信才算成立</li>
-      <li>改日期或人數，多半只能取消重訂，照收取消費</li>
     </ol>
-    <p class="meta">御来光館的扣款通知信要留著，14:00 後過五合目閘門時要出示。</p>
+    <p class="meta">改日期或人數多半只能取消重訂。御来光館的扣款通知信 14:00 後過五合目閘門時要出示。</p>
   </div>
-</div>
-<div class="tips">
-  <div class="box">
-    <h3>選山屋</h3>
+  <div class="box notes">
+    <h3>富士山ホテル訂不到</h3>
     <ul>
-      <li>建議住 3,200 m 以上，住太低隔天要更早出發、休息時間被壓縮</li>
-      <li>體力較弱可選 3,100–3,250 m，日落前入住</li>
-      <li>八合目到山頂約 180 分鐘，01:00 前出發才趕得上 04:30–05:00 日出</li>
-      <li>住御來光館 03:30 出發也來得及</li>
-      <li>高度適應考量：Lynn 原本想住御來光館，後來改住較低的白雲莊</li>
+      <li>網路預約只收日本國內的個人，只能從日本網域連線</li>
+      <li>2026 年英文預約暫停，只能找 Fuji Mountain Guides 代訂，每人 ¥1,000</li>
     </ul>
   </div>
   <div class="box">
-    <h3>山屋生活</h3>
+    <h3>選山屋、山屋生活</h3>
     <ul>
-      <li>通鋪、不能洗澡，多數沒有插座</li>
-      <li>廁所 ¥200–300，只收硬幣</li>
-      <li>多數山屋不收信用卡，帶現金</li>
-      <li>樂樂日本建議帶：眼罩、耳塞、頭燈、睡袋內套、牙齒清潔紙巾、行動電源</li>
+      <li>建議住 3,200 m 以上；八合目到山頂約 180 分鐘，01:00 前出發才趕得上日出</li>
+      <li>不能洗澡，多數沒有插座，帶行動電源</li>
+      <li>廁所 ¥200–300 只收硬幣，多數山屋現場不收信用卡</li>
     </ul>
   </div>
 </div>
-<details>
-  <summary>備案：富士宮線山屋（吉田線搶不到時）</summary>
-  <div class="tablewrap"><table>
-    <thead><tr><th>山屋</th><th>位置</th><th>標高</th><th>收容</th><th>1 泊 2 食</th><th>素泊</th><th>電話</th></tr></thead>
-    <tbody>
-      <tr><td>新六合目宝永山荘</td><td>新六合目</td><td>2,493 m</td><td>50</td><td>¥11,000</td><td>¥9,000</td><td>090-7607-2232</td></tr>
-      <tr><td>六合目雲海荘</td><td>六合目</td><td>2,500 m</td><td>50</td><td>¥11,000</td><td>¥9,000</td><td>090-2618-2231</td></tr>
-      <tr><td>新七合目御来光山荘</td><td>新七合目</td><td>2,780 m</td><td>130</td><td>¥15,500</td><td>¥13,500</td><td>090-4083-2233</td></tr>
-      <tr><td>元祖七合目山口山荘</td><td>七合目</td><td>3,010 m</td><td>100</td><td>¥13,000</td><td>¥11,000</td><td>090-7022-2234</td></tr>
-      <tr><td>八合目池田館</td><td>八合目</td><td>3,250 m</td><td>180</td><td>¥13,000</td><td>¥11,000</td><td>090-2772-2235</td></tr>
-      <tr class="pick"><td>九合目萬年雪山荘</td><td>九合目</td><td>3,460 m</td><td>200</td><td>¥13,000</td><td>¥11,000</td><td>090-7025-2236</td></tr>
-      <tr><td>九合五勺胸突山荘</td><td>九合五勺</td><td>3,590 m</td><td>100</td><td>¥12,000</td><td>¥10,000</td><td>090-5855-8759</td></tr>
-      <tr><td>頂上富士館</td><td>山頂</td><td>3,740 m</td><td>100</td><td>¥12,000</td><td>¥10,000</td><td>0544-26-1519</td></tr>
-    </tbody>
-  </table></div>
-  <p class="caption">萬年雪山莊 2026 年報價：含兩餐 ¥14,500、一餐 ¥13,500、素泊 ¥12,500（87cat）。荒野旅人和入野門的備案也是這間。</p>
-</details>
 
-<h2 id="tips" class="plain">共同建議</h2>
+<h2 id="tips" class="plain">注意事項</h2>
 <div class="tips">
   <div class="box notes">
     <h3>最大關卡：搶山屋</h3>
     <ul>
-      <li>2026 年八合目以上集中在 5/1–5/16 開放，各館 3–4 月公告日期，3 月起就定期看官網</li>
-      <li>開放當天就額滿，同時搶 2 間，多人分頭搶；やまたん要先註冊帳號、存好信用卡</li>
+      <li>2026 年八合目以上集中在 5/1–5/16 開放，各館 3–4 月公告日期，3 月起定期看官網</li>
+      <li>開放當天就額滿，同時搶 2 間、多人分頭搶；やまたん要先註冊帳號、存好信用卡</li>
       <li>很多間一訂就收 5% 取消費，重複訂多間要算這筆</li>
       <li>搶不到的最後手段：日本旅行社代訂，約貴 50%</li>
-      <li>有訂到山屋才能在 14:00 後入山</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>入山規定（吉田線）</h3>
+    <ul>
+      <li>入山費 ¥4,000，線上預約刷卡，入山時發綁繩扣在背包上</li>
+      <li>14:00 到隔天 03:00 封閉登山道，有山屋預約的人除外</li>
+      <li>每日上限 4,000 人；規定每年在改，出發前以官方網站為準</li>
     </ul>
   </div>
   <div class="box">
     <h3>出發前</h3>
     <ul>
-      <li>2027 夏天前先爬一次台灣 3,000 m 以上的山，測高度適應</li>
+      <li>先爬一次台灣 3,000 m 以上的山，測高度適應</li>
       <li>出發前 3–4 個月開始慢跑、重訓、爬樓梯</li>
       <li>考慮諮詢醫師拿高山症藥</li>
-      <li>行程前後留 1–2 天預備日：5 篇自組紀錄裡有 2 篇登頂遇到雨霧，1 篇隔天就變天</li>
+      <li>前人紀錄常遇到登頂下雨起霧，行程可以的話留預備日</li>
     </ul>
   </div>
   <div class="box">
     <h3>山上</h3>
     <ul>
-      <li>帶大量 ¥100 硬幣：廁所、水、食物</li>
-      <li>防曬、防風、防火山灰：太陽眼鏡、圍脖、長褲</li>
+      <li>帶大量 ¥100 硬幣；登山巴士只收現金</li>
+      <li>大行李放河口湖站置物櫃 ¥800–1,200／天</li>
       <li>起登前在五合目待一下適應高度，全程放慢</li>
-      <li>不能撐傘，帶上下分開的雨衣</li>
-      <li>下山的之字形碎石坡比上山更累</li>
+      <li>防曬、防風、防火山灰：太陽眼鏡、圍脖、長褲；不能撐傘，帶上下分開的雨衣</li>
     </ul>
   </div>
 </div>
 
 <h2 id="src" class="plain">資料來源</h2>
 <ul class="src">
-  <li><a href="https://travelwildtw.com/shop/fuji">荒野旅人：富士山御來光二日（2027 梯次）</a></li>
-  <li><a href="https://lynnbright.tw/zh/go-hiking-mt-fuji-zh-tw/">Lynn RemoteEverywhere：富士山登山超完整攻略（2025）</a></li>
-  <li><a href="https://www.dcard.tw/f/japan_travel/p/259401651">Dcard：你也想爬富士山很久了嗎？（2025）</a></li>
-  <li><a href="https://mnoopy.com/fuji-climbing-yoshida-route-review/">mnoopy：初心者の富士登山レポ（2026）</a></li>
-  <li><a href="https://hiking.biji.co/index.php?q=review&amp;act=info&amp;review_id=32550">健行筆記：走來走去-29 富士山吉田路線（2024）</a></li>
-  <li><a href="https://hiking.biji.co/index.php?q=review&amp;act=info&amp;review_id=34411">健行筆記：富士山 2025 完整攻略（2024 實登）</a></li>
-  <li><a href="https://www.ptt.cc/bbs/Japan_Travel/M.1755870510.A.DFD.html">PTT Japan_Travel：2天1夜登頂富士山（2025）</a></li>
-  <li><a href="https://87cat.com/fuji-climbing-cost-self-guided-vs-tour/">貓咪裝人：爬富士山要多少錢？自己爬 vs 跟團</a></li>
-  <li><a href="https://rakurakujp.com/outdoors/fujisan-climbing/fujisan-huts-complete-list/">樂樂日本：富士山山屋完整列表（2025）</a></li>
   <li><a href="https://www.fujisan-climb.jp/en/mountainhut_yoshida/">富士登山オフィシャルサイト：吉田ルート山小屋（各官網連結）</a></li>
   <li><a href="https://www.yamatan.net/faq/ye6leh4q1v70">やまたん：預約流程 FAQ</a></li>
-  <li><a href="https://www.fujikyu-travel.co.jp/free5/timetablehighway_haneda.html">富士急トラベル：羽田空港・品川～河口湖線時刻表</a></li>
-  <li><a href="https://www.fujikyu-travel.co.jp/free5/timetablehighway_narita.html">富士急トラベル：成田空港～河口湖線時刻表</a></li>
-  <li><a href="https://prtimes.jp/main/html/rd/p/000001848.000001110.html">PR TIMES：羽田空港～富士山駅線 2025/11 ダイヤ改正</a></li>
-  <li><a href="https://www.booking.com/searchresults.zh-tw.html?ss=Kawaguchiko&amp;checkin=2027-07-21&amp;checkout=2027-07-22&amp;group_adults=2&amp;no_rooms=1&amp;order=price">Booking.com：河口湖 2027/7/21 住宿搜尋</a></li>
-  <li><a href="https://www.jalan.net/a/minshuku/150000/SML_150602.html">じゃらん：河口湖・西湖・富士吉田の民宿</a></li>
-  <li><a href="https://kotobukisou-kawaguchiko.com/ryoukin.html">民宿寿荘：料金</a></li>
-  <li><a href="https://www.tour.ne.jp/j_hotel/19869/">トラベルコ：温泉民宿 丸弥荘</a></li>
-  <li><a href="https://www.fujikyu-travel.co.jp/free8/TZN_1.html">富士急トラベル：2026 富士登山バス</a></li>
-  <li><a href="https://skyticket.jp/rentacar/koushinetsu/yamanashi/kawaguchiko_station/">skyticket：河口湖駅レンタカー比較</a></li>
-  <li><a href="https://www.kkday.com/zh-tw/product/601647">KKday：河口湖・輕井澤等地區當地包車（#601647）</a></li>
   <li><a href="https://yama-nikki.jp/posts/fujisan-yamagoya-2026/">yama-nikki：2026年版 富士山の山小屋まとめ</a></li>
+  <li><a href="https://www.fujikyu-travel.co.jp/free5/timetablehighway_haneda.html">富士急トラベル：羽田空港～河口湖線時刻表</a></li>
+  <li><a href="https://www.fujikyu-travel.co.jp/free8/TZN_1.html">富士急トラベル：2026 富士登山バス</a></li>
+  <li><a href="https://www.kkday.com/zh-tw/product/601647">KKday：河口湖當地包車（#601647）</a></li>
+  <li><a href="https://skyticket.jp/rentacar/koushinetsu/yamanashi/kawaguchiko_station/">skyticket：河口湖駅レンタカー比較</a></li>
+  <li><a href="https://www.booking.com/searchresults.zh-tw.html?ss=Kawaguchiko&amp;checkin=2027-07-21&amp;checkout=2027-07-22&amp;group_adults=2&amp;no_rooms=1&amp;order=price">Booking.com：河口湖 2027/7/21 住宿搜尋</a></li>
   <li><a href="https://www.travelvoice.jp/20250418-157555">travelvoice：山梨県 2025 入山規制、通行料 4,000 円</a></li>
-  <li><a href="https://www.travelvoice.jp/20250509-157663">travelvoice：静岡県 2025 入山料</a></li>
   <li><a href="https://tetsudo-ch.com/13028373.html">鉄道チャンネル：2026 富士山通行予約開始</a></li>
-  <li><a href="https://travel.yam.com/article/134288">輕旅行：2025 富士山登山攻略</a></li>
-  <li><a href="https://zh.japanopia-fuji.com/yoshidaroute_2025/">japanopia：2025 吉田路線完全攻略</a></li>
+  <li><a href="https://lynnbright.tw/zh/go-hiking-mt-fuji-zh-tw/">Lynn RemoteEverywhere：富士山登山超完整攻略（2025）</a></li>
+  <li><a href="https://www.dcard.tw/f/japan_travel/p/259401651">Dcard：你也想爬富士山很久了嗎？（2025）</a></li>
+  <li><a href="https://hiking.biji.co/index.php?q=review&amp;act=info&amp;review_id=34411">健行筆記：富士山 2025 完整攻略（2024 實登）</a></li>
+  <li><a href="https://mnoopy.com/fuji-climbing-yoshida-route-review/">mnoopy：初心者の富士登山レポ（2026）</a></li>
 </ul>
-<p class="caption">整理日期 2026/11/17，山屋官網資料 2026/11/18 查詢。2027 年的價格、訂位日期與規定都要出發前再確認。</p>
+<p class="caption">整理日期 2026/11/18。2027 年的價格、訂位日期與規定都要出發前再確認。</p>
 
 </div>
 <script>
 (function(){
-  var Y=2027,tour=['7-13','7-16','7-22','7-25','7-28','7-31','8-9','8-12','8-15','8-20','8-23','8-26','8-30'],
-    tour3=['7-1','7-8','7-12','7-15','7-19','7-22','7-26','7-29','8-2','8-4','8-9','8-12','8-16','8-19','8-23','8-26','8-30','9-2','9-6'];
+  var Y=2027,tour3=['7-1','7-8','7-12','7-15','7-19','7-22','7-26','7-29','8-2','8-4','8-9','8-12','8-16','8-19','8-23','8-26','8-30','9-2','9-6'];
   function cls(m,d,w){
     var k=m*100+d;
     if(k>910)return 'off';
@@ -634,7 +369,6 @@ summary{cursor:pointer;font-weight:700;color:var(--cedar)}
     for(var d=1;d<=n;d++){
       var w=(first+d-1)%7,c=cls(m,d,w);
       var key=m+'-'+d,dots='';
-      if(tour.indexOf(key)>=0)dots+='<i class="d1"></i>';
       if(tour3.indexOf(key)>=0)dots+='<i class="d3"></i>';
       row+='<td class="'+c+'">'+d+(dots?'<span class="dots">'+dots+'</span>':'')+'</td>';
       if(w===6){rows+=row+'</tr>';row='<tr>'}
